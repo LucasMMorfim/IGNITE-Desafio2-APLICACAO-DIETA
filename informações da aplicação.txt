@@ -1,0 +1,24 @@
+Nessa aplicação o usuario pode:
+
+[x] Usuario ser cadastrado, *
+[x] Deve ser possível editar uma refeição, podendo alterar os dados,
+[x] Deve ser possível apagar uma refeição,
+[x] Deve ser possível listar todas as refeições,
+[x] Deve ser possível visualizar uma única refeição,
+[x] Quantidade total de refeições registradas,
+[x] Quantidade total de refeições dentro da dieta,
+[x] Quantidade total de refeições fora da dieta,
+[x] Melhor dia com mais refeições na dieta,
+
+
+cada refeição tem:
+
+[x] ID unico,
+[x] Nome
+[x] Descrição,
+[x] Data de criação,
+[x] Data de atualizaçao,
+[x] Está na dieta ou não
+
+
+* Que o usuario é cadastrado no momento que ele faz um post, o cadastramento dele e feito por cookies

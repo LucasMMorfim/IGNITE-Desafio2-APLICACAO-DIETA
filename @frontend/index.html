@@ -1,0 +1,86 @@
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>APIMeals</title>
+</head>
+<body>
+
+  <header>
+    <h1>DESAFIO 2 - Registro e controle de dieta</h1>
+  </header>
+ 
+  <section style="display: flex;">
+
+    <!-- INSERT MEAL -->
+
+    <fieldset style="width: 170px; height: 160px; display: inline-block; margin-right: 15px;">
+      <legend>INSERT MEAL</legend>
+
+      <form>
+
+          Name of the meal:<br>
+            <input id="name" type="text" required>
+        <br>
+          Meal Description:<br>
+            <input id="description" type="text" required>
+        <br>
+          Is the meal on the diet?
+        <br>
+            <input id="optionDietYes" name="optionDiet" type="radio" value="yes" required checked>Yes
+            <input id="optionDietNo" name="optionDiet" type="radio" value="no" style="margin-left: 55px;" required>No
+        <br>
+          <input id="Save" style="margin-top: 5px; margin-left: 55px;" type="button" name="Send" value="Send">
+
+      </form> 
+
+    </fieldset>
+
+    <!-- EDIT MEAL -->
+
+    <fieldset style="width: 170px; height: 160px; display: inline-block; margin-right: 15px;">
+      <legend>EDIT MEAL</legend>
+
+      <form>
+
+          Name of the meal:<br>
+            <input id="name" type="text" required>
+        <br>
+          Meal Description:<br>
+            <input id="description" type="text" required>
+        <br>
+          Is the meal on the diet?
+        <br>
+            <input id="optionDietYes" name="optionDiet" type="radio" value="yes" required checked>Yes
+            <input id="optionDietNo" name="optionDiet" type="radio" value="no" style="margin-left: 55px;" required>No
+        <br>
+          <input id="Save" style="margin-top: 5px; margin-left: 55px;" type="button" name="Send" value="Send">
+
+      </form> 
+
+    </fieldset>
+
+  </section>
+
+    <!-- LIST ALL MEALS -->
+
+    <fieldset style="height: 160px;">
+      <legend>LIST MEAL</legend>
+
+      <form>
+
+          Meals:<br>
+            <input id="name" type="text" required>
+
+      </form> 
+
+    </fieldset>
+    
+
+
+  <script src="./js/post-button.js"></script>
+  <script src="./js/get-button.js"></script>
+  
+</body>
+</html>
