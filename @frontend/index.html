@@ -5,17 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>APIMeals</title>
 </head>
+<link rel="stylesheet" href="./css/index.css">
 <body>
 
   <header>
     <h1>DESAFIO 2 - Registro e controle de dieta</h1>
   </header>
  
+  <!-- INSERT MEAL -->
+
   <section style="display: flex;">
 
-    <!-- INSERT MEAL -->
 
-    <fieldset style="width: 170px; height: 160px; display: inline-block; margin-right: 15px;">
+    <fieldset style="width: 170px; height: 160px; margin-right: 15px;">
       <legend>INSERT MEAL</legend>
 
       <form>
@@ -28,56 +30,65 @@
         <br>
           Is the meal on the diet?
         <br>
-            <input id="optionDietYes" name="optionDiet" type="radio" value="yes" required checked>Yes
+            <input id="optionDietYes" name="optionDiet" type="radio" value="yes" required>Yes
             <input id="optionDietNo" name="optionDiet" type="radio" value="no" style="margin-left: 55px;" required>No
         <br>
           <input id="Save" style="margin-top: 5px; margin-left: 55px;" type="button" name="Send" value="Send">
 
-      </form> 
+      </form>
 
     </fieldset>
 
     <!-- EDIT MEAL -->
 
     <fieldset style="width: 170px; height: 160px; display: inline-block; margin-right: 15px;">
-      <legend>EDIT MEAL</legend>
+      <legend>DELETE MEAL</legend>
 
       <form>
 
-          Name of the meal:<br>
-            <input id="name" type="text" required>
+          ID of the meal:<br>
+            <input id="idMeal" type="text" required>
         <br>
-          Meal Description:<br>
-            <input id="description" type="text" required>
         <br>
-          Is the meal on the diet?
-        <br>
-            <input id="optionDietYes" name="optionDiet" type="radio" value="yes" required checked>Yes
-            <input id="optionDietNo" name="optionDiet" type="radio" value="no" style="margin-left: 55px;" required>No
-        <br>
-          <input id="Save" style="margin-top: 5px; margin-left: 55px;" type="button" name="Send" value="Send">
+          <input id="deleteMeal" style="margin-top: 5px; margin-left: 55px;" type="button" name="Send" value="Send">
 
       </form> 
 
-    </fieldset>
-
+      </fieldset>
   </section>
 
     <!-- LIST ALL MEALS -->
 
-    <fieldset style="height: 160px;">
+  <section style="display: block;">
+
+    <fieldset style="height: auto; display: block;">
       <legend>LIST MEAL</legend>
 
       <form>
 
           Meals:<br>
-            <input id="name" type="text" required>
+
+          <table id="meal-table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Descrição</th>
+                <th>É Dieta?</th>
+                <th>Data de Criação</th>
+                <th>Data de Atualização</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+
+            <input id="listAll" style="margin-top: 5px; margin-left: 55px;" type="button" name="Send" value="Send">
 
       </form> 
 
     </fieldset>
+  </section>
     
-
 
   <script src="./js/post-button.js"></script>
   <script src="./js/get-button.js"></script>

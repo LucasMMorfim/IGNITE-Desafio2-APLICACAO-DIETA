@@ -1,4 +1,4 @@
-import { FastifyInstance, FastifyReply, FastifyRequest } from "fastify"
+import { FastifyInstance, FastifyReply } from "fastify"
 import { z } from 'zod'
 import { randomUUID } from "node:crypto"
 import { knex } from "../database"
